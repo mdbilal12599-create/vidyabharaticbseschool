@@ -1,0 +1,209 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* APPLY BUTTON */
+.apply-btn {
+    background: #b23b2a;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: url('students.jpg') center/cover;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding-left: 60px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+/* CHECK EVENTS BUTTON */
+.btn {
+    background: #b23b2a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #8e2e20;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 80px;
+    background: #f9f9f9;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.about.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-top-image img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0 15px;
+}
+
+.about-text {
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* COURSES */
+.courses {
+    padding: 60px;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: #f5f5f5;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    background: #b23b2a;
+    color: white;
+    transform: translateY(-10px);
+}
+
+/* CAMPUS BOX */
+.campus-box {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 260px;
+    background: #b23b2a;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.3s;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.campus-box.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* BLOCK STYLE */
+.block {
+    margin-bottom: 12px;
+}
+
+.block h4 {
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+.block p {
+    font-size: 13px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 60px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.contact-box {
+    background: #b23b2a;
+    padding: 25px;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+}
